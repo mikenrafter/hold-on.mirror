@@ -1,0 +1,9 @@
+node_modules/
+dist/
+src/background.js
+src/interstitial.js
+src/preferences/options.js
+*.xpi
+web-ext-artifacts/
+# Linked by `nix develop` (see flake.nix).
+.firefox-addon-live

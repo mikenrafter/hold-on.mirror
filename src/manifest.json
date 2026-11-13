@@ -1,0 +1,14 @@
+{
+	"name": "Hold On",
+	"description": "Hold unexpected pages before they load so you can choose the right container or remove tracking first.",
+	"version": "0.1.0",
+	"manifest_version": 2,
+	"author": "Mikenrafter",
+	"homepage_url": "https://gitlab.com/mikenrafter/hold-on",
+	"permissions": ["storage", "tabs", "webNavigation", "webRequest", "webRequestBlocking", "<all_urls>"],
+	"background": { "scripts": ["background.js"] },
+	"web_accessible_resources": ["interstitial.html"],
+	"options_ui": { "page": "preferences/options.html", "open_in_tab": false, "browser_style": true },
+	"icons": { "48": "icons/icon.svg", "96": "icons/icon.svg" },
+	"browser_specific_settings": { "gecko": { "id": "hold-on@mikenrafter", "strict_min_version": "140.0", "data_collection_permissions": { "required": ["none"] } } }
+}

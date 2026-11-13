@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="en">
+	<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>Hold On Settings</title><style>
+		:root { font-family: system-ui, sans-serif; } body { margin: 0; padding: 20px; background: #f7f7f9; color: #1f2328; } main { max-width: 720px; margin: auto; padding: 20px; background: white; border: 1px solid #e1e4e8; border-radius: 10px; } textarea { box-sizing: border-box; width: 100%; min-height: 180px; margin: 8px 0; padding: 8px; font: 14px ui-monospace, monospace; } button { padding: 8px 14px; border: 1px solid #1f6feb; border-radius: 7px; background: #1f6feb; color: white; font: inherit; cursor: pointer; } #status { min-height: 20px; }
+	</style></head>
+	<body><main><h1>Hold On Settings</h1><p>Hold On watches pages opened in a newly created tab. Put one JavaScript regular expression per line to let matching URLs load normally. Patterns are matched against the complete URL.</p><form id="form"><label for="patterns">Excluded URL regex patterns</label><textarea id="patterns" spellcheck="false" placeholder="^https://example\\.com/"></textarea><button type="submit">Save settings</button><p id="status" aria-live="polite"></p></form></main><script src="options.js"></script></body>
+</html>
